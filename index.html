@@ -1,0 +1,45 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocioDa MackUps</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/8602fd3c0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="./imagesmain/mohela.png"></a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#why-choose-us">Why choose us?</a></li>
+                <li><a href="index.html#faqs">FAQs</a></li>
+                <li><a href="contact.html">Let's talk</a></li>
+            </ul>
+            <div class="icons">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="shopping.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="login.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span id="usernameDisplay"></span> <!-- Display user's name here -->
+                </a>
+            </div>
+            <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+    <script>
+        // Retrieve user's name from localStorage and display it
+        const username = localStorage.getItem('username');
+        if (username) {
+            document.getElementById('usernameDisplay').textContent = username;
+        }
+    </script>
+</body>
+</html>
